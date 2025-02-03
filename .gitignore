@@ -1,0 +1,7 @@
+.idea
+main.py
+venv
+db.sqlite3
+mysite_data.json
+__pycache__
+migrations
