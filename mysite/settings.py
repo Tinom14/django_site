@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'blog',
         'USER': 'blog',
-        'PASSWORD': '********',
+        'PASSWORD': 's03022003',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -138,7 +138,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_HOST_USER = 'Tinom.7@yandex.ru'
-EMAIL_HOST_PASSWORD = '**********'
+EMAIL_HOST_PASSWORD = 'gdwicecbhtpcbcru'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
