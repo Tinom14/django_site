@@ -6,3 +6,4 @@ mysite_data.json
 __pycache__
 migrations
 .env
+media
