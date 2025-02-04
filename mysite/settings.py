@@ -1,15 +1,14 @@
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-load_dotenv()
 
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 SITE_ID = 1
 
@@ -63,22 +62,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'blog',
         'USER': 'blog',
-<<<<<<< HEAD
         'PASSWORD': str(os.getenv('DATABASES_PASSWORD')),
-=======
-        'PASSWORD': '********',
->>>>>>> b030c2dceda650abccbb7a7576ca14f6c068d024
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -95,7 +88,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -104,9 +96,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 STATIC_URL = 'static/'
-
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -114,16 +104,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_HOST_USER = 'Tinom.7@yandex.ru'
-<<<<<<< HEAD
 EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_HOST_PASSWORD'))
-=======
-EMAIL_HOST_PASSWORD = '**********'
->>>>>>> b030c2dceda650abccbb7a7576ca14f6c068d024
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
-<<<<<<< HEAD
 
 LOGIN_REDIRECT_URL = '/'
 
@@ -148,5 +133,3 @@ SOCIAL_AUTH_GITHUB_SECRET = str(os.getenv('GITHUB_SECRET'))
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = str(os.getenv('GOOGLE_KEY'))
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = str(os.getenv('GOOGLE_SECRET'))
-=======
->>>>>>> b030c2dceda650abccbb7a7576ca14f6c068d024
